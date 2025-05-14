@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Us</title>
+
+    <!-- Gogole Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        section {
+            font-family: "Poppins", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <style type="text/tailwindcss">
+        @theme {
+        --color-brg: #059212;
+        --color-pri: #06D001;
+        --color-sec: #9BEC00;
+        --color-acnt: #F3FF90;
+      }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="min-h-screen">
+        <header> <!-- Header -->
+            <div class="antialiased bg-gray-100 dark:bg-gray-900">
+                <div class="w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
+                    <div x-data="{ open: false }"
+                        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                        <div class="flex flex-row items-center justify-between p-4">
+                            <a href="index.html"
+                                class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
+                                HorizonHope</a>
+                            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+                                @click="open = !open">
+                                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                                    <path x-show="!open" fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"></path>
+                                    <path x-show="open" fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <nav :class="{'flex': open, 'hidden': !open}"
+                            class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="index.html">Home</a>
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="index.html#whoWeAre">About</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Main -->
+        <main class="bg-gray-100/50 bg-cover bg-center flex flex-col items-center justify-center" style="background-image: url('./images/child-1.jpg');">
+            <!-- Hero -->
+            <section class="my-6">
+                <div
+                    class="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white/80 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">
+                    <div>
+                        <h1 class="text-3xl font-extrabold">Let's Talk</h1>
+                        <p class="text-sm text-gray-600 mt-3">Have some big idea or brand to develop and need help? Then
+                            reach out we'd love to hear about your project and provide help.</p>
+                        <div class="mt-12">
+                            <h2 class="text-lg font-extrabold">Email</h2>
+                            <ul class="mt-3">
+                                <li class="flex items-center">
+                                    <div
+                                        class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill='#00A400' viewBox="0 0 479.058 479.058">
+                                            <path
+                                                d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                                                data-original="#000000" />
+                                        </svg>
+                                    </div>
+                                    <a target="blank" href="https://veilmail.io/e/FkKh7o"
+                                        class="text-[#00A400] text-sm ml-3">
+                                        <small class="block">Mail</small>
+                                        <strong>https://veilmail.io/e/FkKh7o</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12">
+                            <h2 class="text-lg font-extrabold">Socials</h2>
+                            <ul class="flex mt-3 space-x-4">
+                                <li
+                                    class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                    <a href="javascript:void(0)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill='#00A400' viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
+                                                data-original="#000000" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li
+                                    class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                    <a href="javascript:void(0)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill='#00A400' viewBox="0 0 511 512">
+                                            <path
+                                                d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"
+                                                data-original="#000000" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li
+                                    class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                    <a href="javascript:void(0)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            fill='#00A400' viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <form action="https://fabform.io/f/xxxxx" method="post" class="ml-auo space-y-4">
+                        <input type='text' name="name" placeholder='Name'
+                            class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#00A400]" />
+                        <input type='email' name='email' placeholder='Email'
+                            class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#00A400]" />
+                        <input type='text' placeholder='Subject' name='subject'
+                            class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#00A400]" />
+                        <textarea placeholder='Message' rows="6" name='message'
+                            class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#00A400]"></textarea>
+                        <button type='button' type="submit"
+                            class="text-white bg-[#00A400] hover:bg-[#01650F] font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- <footer class="bg-blue-100/80 font-sans dark:bg-gray-900" > -->
+        <footer class="font-sans bg-cover bg-fixed bg-center w-full"
+            style="background-image: url('./images/child-7.jpg')">
+            <div class=" bg-white/60 dark:bg-gray-600/70">
+                <div class="container px-6 py-12 mx-auto">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                        <div class="sm:col-span-2">
+                            <h1
+                                class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">
+                                Subscribe our newsletter to get an update.</h1>
+
+                            <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+                                <input id="email" type="text"
+                                    class="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                                    placeholder="Email Address" />
+
+                                <button
+                                    class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+
+                            <div class="flex flex-col items-start mt-5 space-y-2">
+                                <a href="index.html#top"
+                                    class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                                    Home</a>
+                                <a href="index.html#whoWeAre"
+                                    class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                                    Who We Are</a>
+                                <a href="index.html#visionMission"
+                                    class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                                    Our Philosophy</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-semibold text-gray-800 dark:text-white">Industries</p>
+
+                            <div class="flex flex-col items-start mt-5 space-y-2">
+                                <p
+                                    class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                                    Retail & E-Commerce</p>
+                                <p
+                                    class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                                    Information Technology</p>
+                                <p
+                                    class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                                    Finance & Insurance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700 h-2" />
+
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                        <div class="flex flex-1 gap-4 hover:cursor-pointer">
+                            <img src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" width="130"
+                                height="110" alt="" />
+                            <img src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg"
+                                width="130" height="110" alt="" />
+                        </div>
+
+                        <div class="flex gap-4 hover:cursor-pointer">
+                            <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30"
+                                alt="fb" />
+                            <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30"
+                                alt="tw" />
+                            <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30"
+                                alt="inst" />
+                            <img src="https://www.svgrepo.com/show/94698/github.svg" class="" width="30" height="30"
+                                alt="gt" />
+                            <img src="https://www.svgrepo.com/show/22037/path.svg" width="30" height="30" alt="pn" />
+                            <img src="https://www.svgrepo.com/show/28145/linkedin.svg" width="30" height="30"
+                                alt="in" />
+                            <img src="https://www.svgrepo.com/show/22048/dribbble.svg" class="" width="30" height="30"
+                                alt="db" />
+                        </div>
+                    </div>
+                    <p
+                        class="font-sans p-8 text-start text-gray-500 dark:text-gray-200 md:text-center md:text-lg md:p-4">
+                        © 2025 All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+
+</html>
